@@ -1,0 +1,252 @@
+body {
+				margin:0 auto;
+				font-family: sans-serif;
+				background: whitesmoke;
+			}
+				/* The Modal (background) */
+			.modal {
+			    display: none; /* Hidden by default */
+			    position: fixed; /* Stay in place */
+			    z-index: 1; /* Sit on top */
+			    padding-top: 6%; /* Location of the box */
+			    left: 0;
+			    top: 0;
+			    width: 100%; /* Full width */
+			    height: 100%; /* Full height */
+			    overflow: auto; /* Enable scroll if needed */
+			    background-color: rgb(0,0,0); /* Fallback color */
+			    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Content */
+			.modal-content {
+			    background-color: #fefefe;
+			    margin: auto;
+			    padding: 20px;
+			    border: 1px solid #888;
+			    width: 80%;
+			}
+
+			/* The Close Button */
+			.close {
+			    color: #aaaaaa;
+			    float: right;
+			    font-size: 28px;
+			    font-weight: bold;
+			}
+
+			body.notouch .close:hover,
+			body.notouch .close:focus {
+			    color: #000;
+			    text-decoration: none;
+			    cursor: pointer;
+			}
+
+			.game-wrapper {
+				position: absolute;
+			    top: 80px;
+			    bottom:105px;
+			    display: flex;
+			    align-items: center;
+			    width: 100%;
+			    justify-content: center;
+			}
+
+			#gameMedium > div {
+			    width: 23%;
+				float: left;
+				text-align: center;
+				color: white;
+				transition: background-color 0.3s ease;
+				margin: 1%;
+				padding-bottom: 23%;
+				height: 0;
+				position: relative;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#53cbf1+40,2eb4dd+100 */
+				background: rgb(83,203,241); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(83,203,241,1) 40%, rgba(46,180,221,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53cbf1', endColorstr='#2eb4dd',GradientType=1 ); /* IE6-9 */
+			}
+
+			#gameEasy > div {
+				width: 31.33%;
+				float: left;
+				text-align: center;
+				color: white;
+				transition: background-color 0.3s ease;
+				margin: 1%;
+				padding-bottom: 31.33%;
+				height: 0;
+				position: relative;
+			}
+
+			#gameDifficult > div {
+			    width: 18%;
+				float: left;
+				text-align: center;
+				color: white;
+				transition: background-color 0.3s ease;
+				margin: 1%;
+				padding-bottom: 18%;
+				height: 0;
+				position: relative;
+			}
+
+			body.notouch #gameMedium > div:hover, body.notouch #gameEasy > div:hover, body.notouch #gameDifficult > div:hover {
+				cursor: pointer;
+			}
+
+			#gameMedium > .white, #gameEasy > .white, #gameDifficult > .white {
+				background: white;
+			}
+
+			.footer {
+			    width: 100%;
+			    bottom: 15px;
+			    position: fixed;
+			    text-align: center;
+			    overflow: hidden;
+			    margin-left: 9.5%;
+			    margin-right:6.5%;
+			    font-weight: bold;
+			    color: white;
+			    font-size:18px;
+			}
+
+			.footer > div {
+				width: 18%;
+			    float: left;
+			   	background: #fdd68c;
+			    margin-right: 3%;
+			    cursor: pointer;
+			    height: 40px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    color:white;
+			}
+
+			.header {
+				background:#fdd68c;
+			    font-size: 48px;
+			    text-shadow:2px 2px #00BFFF;
+			    font-weight: bold;
+			    color: #fafad2;
+			    text-align: center;
+			    letter-spacing: 6px;
+			    height: 80px;
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+			}		
+
+			.footer > div.selected {				
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#53cbf1+40,2eb4dd+100 */
+				background: rgb(83,203,241); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(83,203,241,1) 40%, rgba(46,180,221,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53cbf1', endColorstr='#2eb4dd',GradientType=1 ); /* IE6-9 */
+			}
+
+			body.notouch .footer > div:hover {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#53cbf1+40,2eb4dd+100 */
+				background: rgb(83,203,241); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(83,203,241,1) 40%, rgba(46,180,221,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53cbf1', endColorstr='#2eb4dd',GradientType=1 ); /* IE6-9 */
+
+
+			}
+
+			.timer {
+			    margin-right: 3%;
+			    text-align: center;
+			    color: rgba(83,203,241,1);
+			    font-weight: bold;
+			    height: 40px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    float:left;
+			}
+
+			.modal-content > p {
+				text-align: center;
+			    font-size: 30px;
+			    color: lightseagreen;
+			}
+
+			#gameEasy span, #gameMedium span, #gameDifficult span {
+				position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    width: 100%;
+			    display: table;
+			    margin: auto;
+			    font-size: 1.5em;
+			}
+
+			.options {
+				position:fixed;bottom:65px;width:100%;display: flex;
+    			justify-content: center;
+    			font-size: 18px;
+			}
+
+			#gameEasy .background, #gameMedium .background, #gameDifficult .background {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#53cbf1+40,2eb4dd+100 */
+				background: rgb(83,203,241); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(83,203,241,1) 40%, rgba(46,180,221,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(83,203,241,1) 40%,rgba(46,180,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53cbf1', endColorstr='#2eb4dd',GradientType=1 ); /* IE6-9 */
+			}
+
+
+
+			@media screen and (max-width: 800px) {
+				.footer {
+					margin: 0 auto; 
+				    width: 100%;
+				    bottom: 15px;
+				    position: fixed;
+				    text-align: center;
+				    overflow: hidden;
+				    margin-left: 1%;
+				    font-weight: bold;
+				    color: white;				    
+				}
+
+				.footer > div {					
+					margin-right:1%;
+					width:23.75%;
+				}
+
+				.options {
+					margin-left:1%;
+					margin-right:1%;
+				}			
+			}
+
+			body.touch .header {
+				height:120px;
+			}
+
+			body.touch .footer>div {
+				height:65px;
+				font-size:30px;
+			}
+
+			body.touch .options {
+				bottom:85px;
+				font-size:30px;
+			}
+
+			body.touch .timer {
+				height:60px;
+			}

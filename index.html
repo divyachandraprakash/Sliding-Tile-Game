@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="header"><span>NUBLE</span></div>
+		<div class="game-wrapper">
+		<div id="gameEasy">
+			<div class="00" onclick="calc(this)"><span>1</span></div>
+			<div class="01" onclick="calc(this)"><span>6</span></div>
+			<div class="02" onclick="calc(this)"><span>2</span></div>
+			<div class="10" onclick="calc(this)"><span>8</span></div>
+			<div class="11"  onclick="calc(this)"><span>3</span></div>
+			<div class="12 white" onclick="calc(this)"><span>&nbsp;</span></div>
+			<div class="20" onclick="calc(this)"><span>4</span></div>
+			<div class="21" onclick="calc(this)"><span>5</span></div>
+			<div class="22" onclick="calc(this)"><span>7</span></div>
+		</div>
+		<div id="gameMedium">
+			<div class="00" onclick="calc(this)"><span>1</span></div>
+			<div class="01" onclick="calc(this)"><span>6</span></div>
+			<div class="02" onclick="calc(this)"><span>5</span></div>
+			<div class="03" onclick="calc(this)"><span>2</span></div>
+			<div class="10"  onclick="calc(this)"><span>8</span></div>
+			<div class="11" onclick="calc(this)"><span>7</span></div>
+			<div class="12" onclick="calc(this)"><span>4</span></div>
+			<div class="13 white" onclick="calc(this)"><span>&nbsp;</span></div>
+			<div class="20" onclick="calc(this)"><span>15</span></div>
+			<div class="21" onclick="calc(this)"><span>12</span></div>
+			<div class="22" onclick="calc(this)"><span>3</span></div>
+			<div class="23" onclick="calc(this)"><span>11</span></div>
+			<div class="30" onclick="calc(this)"><span>13</span></div>
+			<div class="31" onclick="calc(this)"><span>10</span></div>
+			<div class="32" onclick="calc(this)"><span>14</span></div>
+			<div class="33" onclick="calc(this)"><span>9</span></div>
+		</div>
+		<div id="gameDifficult">
+			<div class="00" onclick="calc(this)"><span>11</span></div>
+			<div class="01 white" onclick="calc(this)"><span>&nbsp;</span></div>
+			<div class="02" onclick="calc(this)"><span>18</span></div>
+			<div class="03" onclick="calc(this)"><span>7</span></div>
+			<div class="04"  onclick="calc(this)"><span>4</span></div>
+			<div class="10" onclick="calc(this)"><span>3</span></div>
+			<div class="11" onclick="calc(this)"><span>13</span></div>
+			<div class="12" onclick="calc(this)"><span>2</span></div>
+			<div class="13" onclick="calc(this)"><span>14</span></div>
+			<div class="14" onclick="calc(this)"><span>12</span></div>
+			<div class="20" onclick="calc(this)"><span>21</span></div>
+			<div class="21" onclick="calc(this)"><span>1</span></div>
+			<div class="22" onclick="calc(this)"><span>5</span></div>
+			<div class="23" onclick="calc(this)"><span>19</span></div>
+			<div class="24" onclick="calc(this)"><span>10</span></div>
+			<div class="30" onclick="calc(this)"><span>6</span></div>
+			<div class="31" onclick="calc(this)"><span>17</span></div>
+			<div class="32" onclick="calc(this)"><span>23</span></div>
+			<div class="33" onclick="calc(this)"><span>15</span></div>
+			<div class="34" onclick="calc(this)"><span>8</span></div>
+			<div class="40" onclick="calc(this)"><span>16</span></div>
+			<div class="41" onclick="calc(this)"><span>22</span></div>
+			<div class="42" onclick="calc(this)"><span>9</span></div>
+			<div class="43" onclick="calc(this)"><span>24</span></div>
+			<div class="44" onclick="calc(this)"><span>20</span></div>
+		</div>
+		</div>
+		<div class="options">
+		<div class="timer">
+			<span>Timer:&nbsp;</span>
+			<span id="hours">00:</span>
+			<span id="minutes">00:</span>
+			<span id="seconds">00</span>
+		</div>
+		
+		<div class="timer">Moves:&nbsp;<span id="moves">0</span></div>
+		</div>
+		<div class="footer">
+			<div onclick="difficulty(this,'easy')">Easy</div>
+			<div onclick="difficulty(this,'medium')" class="selected">Medium</div>
+			<div onclick="difficulty(this,'difficult')">Difficult</div>
+			<div onclick="newGame()">Reset</div>
+		</div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- Modal content -->
+		  <div class="modal-content">
+		    <span class="close">&times;</span>
+		    <p>Congratulations! You won!</p>
+		  </div>
+
+		</div>
+
+	</body>
+	<script type="text/javascript" src="js/gamescript.js">			
+	</script>
+</html>
